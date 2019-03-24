@@ -1,0 +1,8 @@
+<div class="city">
+  <h2 class="dashboard__headline">In case you feel like travelling, here are some of your nearest cities</h2>
+  <div class="city__card" *ngFor="let city of cities">
+    <b>City:</b> {{ city.title }} <br />
+    <b>Distance:</b> {{ city.distance }} meters<br />
+    <b>Coordinates:</b> {{ city.latt_long }} <br />
+  </div>
+</div>

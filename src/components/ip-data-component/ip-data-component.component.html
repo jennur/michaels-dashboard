@@ -1,0 +1,5 @@
+<div class="ip-data" *ngIf="ipDataIsLoaded">
+  This is where you live on the internet today:  <span class="ip-data__ip">{{ ipData.ip }}</span> (a.k.a your IP address)<br />
+  I see you're at earth location {{ ipData.loc }} -
+  that means you're at <span class="ip-data__city">{{ ipData.city }}!</span> How did you end up there??
+</div>

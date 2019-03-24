@@ -1,0 +1,20 @@
+.city {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__card {
+    border: solid 1px rgb(104, 233, 250);
+    flex: 1 1 0;
+    min-width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    background-color: rgb(200, 249, 255);
+    color: rgb(37, 37, 37);
+  }
+}

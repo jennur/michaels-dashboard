@@ -18,7 +18,6 @@ export class CityService {
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         this.location = position.coords.latitude + ',' + position.coords.longitude;
-        console.log("getLocation: " + this.location);
         getNearestCities(this.location);
       })
     } else {
@@ -29,9 +28,6 @@ export class CityService {
     return this.http.get(this.conversionUrl + '/' + this.url + location).pipe(
       map(response => {
         this.city = response.json()[0].title;
-        console.log("URL: " + this.conversionUrl + '/' + this.url + location);
-
-        console.log("getCityData: " + response.json());
         return response.json();
       })
     )
