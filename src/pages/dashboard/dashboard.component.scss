@@ -1,0 +1,49 @@
+h1 {
+  font-size: 2rem;
+  color: rgb(0, 155, 121);
+}
+h2 { font-size: 1.5rem; }
+
+.dashboard{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(37, 37, 37);
+
+  &__city {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__joke {
+    font-style: italic;
+  }
+}
+.ip-data {
+  &__ip {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  &__city {
+  font-size: 1.5rem;
+  padding: 0 3px;
+  }
+}
+.city__card {
+  border: solid 1px rgb(104, 233, 250);
+  flex: 1 1 0;
+  min-width: 200px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8rem;
+  background-color: rgb(200, 249, 255);
+  color: rgb(37, 37, 37);
+}

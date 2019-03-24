@@ -1,0 +1,35 @@
+
+.login {
+  font-family: 'Quicksand', sans-serif;
+
+  &__input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2)
+  }
+
+  &__submit {
+    padding: 10px;
+    background-color: rgb(0, 155, 121);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgb(0, 126, 98);
+    }
+  }
+
+  &__errors {
+    display: block;
+    padding: 10px 5px 0px 5px;
+    color: rgb(207, 9, 9);
+    font-size: 0.7rem;
+  }
+}

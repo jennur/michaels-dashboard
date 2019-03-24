@@ -1,0 +1,26 @@
+<section class="dashboard">
+    <h1 class="dashboard__headline">Welcome back {{ username }}, here's you're daily feed</h1>
+    <div class="dashboard__ip-data" *ngIf="ipDataIsLoaded">
+      This is where you live on the internet today:  <span class="ip-data__ip">{{ ipData.ip }}</span> (a.k.a your IP address)<br />
+      I see you're at earth location {{ ipData.loc }} -
+      that means you're at <span class="ip-data__city">{{ ipData.city }}!</span> How did you end up there??
+    </div>
+    <h2 class="dashboard__headline">Here's an advice for you</h2>
+    <div class="dashboard__advice">
+      {{ randomAdvice }}
+    </div>
+    <h2 class="dashboard__headline">In case you feel like travelling, here are some of your nearest cities</h2>
+    <div class="dashboard__city">
+      <div class="city__card" *ngFor="let city of cities">
+          <b>City:</b> {{ city.title }} <br />
+          <b>Distance:</b> {{ city.distance }} meters<br />
+          <b>Coordinates:</b> {{ city.latt_long }} <br />
+        </div>
+    </div>
+    <h2 class="dashboard__headline">Let me finish with a Chuck Norris joke </h2>
+    <div class="dashboard__joke">
+      {{ randomJoke }}
+      <br />
+      <br />
+    </div>
+  </section>
