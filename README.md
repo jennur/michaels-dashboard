@@ -8,8 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Run `npm install`
 4. Run `ng serve` and hack yourself into Michaels dashboard from `localhost:4200`. I'll make it easy for you: 
 
-Username: Michael <br/>
-Password: @Michael123
+👨‍💼 Username: Michael <br/>
+🔑 Password: @Michael123
+
 
 ## Some useful info directly imported from the Angular itself:
 
